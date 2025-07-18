@@ -31,7 +31,12 @@ rainwear-sales-prediction/
 ├── scripts/
 │   ├── entrenar_modelo.py                  # Script que entrena el modelo de regresión
 │   ├── Limpiar.py                          # Script de limpieza del dataset
-│   └── cargar_a_supabase.py                # Script que sube los datos a Supabase
+│   ├── cargar_a_supabase.py                # Script que sube los datos a Supabase
+│   ├── cargar_y_explorar_ventas.py         # Exploración inicial del dataset
+│   ├── clima_y_union.py                    # Unión de datos climáticos y ventas
+│   ├── correlacion_ventas_clima.py         # Cálculo de correlación entre clima y ventas
+│   ├── filtrar_top10_ciudades.py           # Filtro por ciudades con mayor número de ventas
+│   └── graficar_resultados.py              # Visualización de resultados
 │
 ├── dashboard_looker/                       # Reporte conectado a Supabase
 │
@@ -129,6 +134,8 @@ Se construyó un dashboard interactivo en Looker Studio que permite visualizar:
 * Cantidad de registros en los que las ventas predichas fueron cercanas a las reales
 
 🔗 [Enlace al dashboard](https://lookerstudio.google.com/s/hj5mG0SO9HE)
+
+Este dashboard se conecta directamente con Supabase y se actualiza en tiempo real con base en la información contenida en la tabla `ventas_predichas_clima`.
 
 ---
 
