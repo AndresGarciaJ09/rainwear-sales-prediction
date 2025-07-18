@@ -26,6 +26,7 @@ rainwear-sales-prediction/
 │   ├── SQL1.png                             # Consulta SQL: Comparación entre ventas reales y predichas
 │   ├── SQL2.png                             # Consulta SQL: Métricas climáticas y de ventas promedio
 │   └── SQL3.png                             # Consulta SQL: Ranking de ventas por ciudad
+│   └── Looker.png                           # Captura del dashboard construido en Looker Studio
 │
 ├── scripts/
 │   ├── entrenar_modelo.py                  # Script que entrena el modelo de regresión
@@ -40,7 +41,7 @@ rainwear-sales-prediction/
 
 ---
 
-## 🗃️ Dataset Utilizado
+## 𞾃 Dataset Utilizado
 
 Se utilizó el dataset **Superstore Sales**, disponible públicamente en Kaggle:
 
@@ -91,7 +92,7 @@ Estos resultados visuales refuerzan la conclusión de que no existe una relació
 
 ---
 
-## 💾 Supabase
+## 📀 Supabase
 
 Los resultados se subieron exitosamente a una base de datos alojada en Supabase:
 
@@ -119,7 +120,9 @@ Se construyó un dashboard interactivo en Looker Studio que permite visualizar:
 - Comparación entre ventas reales y predichas
 - Cantidad de registros en los que las ventas predichas fueron cercanas a las reales
 
-🔗 [Enlace al dashboard](_proporcionar_url_dashboard_aquí_)
+🔗 [Enlace al dashboard](https://lookerstudio.google.com/reporting/e81e9895-acfd-4271-a322-cebc5a749e7e)
+
+![Dashboard Looker](./images/Looker.png)
 
 ---
 
@@ -150,6 +153,7 @@ Por tanto, se optó por usar el dataset de Kaggle citado, que permitió un anál
 3. **Relación real vs. predicha**: ventas predichas están todas por debajo de las reales.
 4. **Distribución del error**: errores absolutos grandes en la mayoría de casos.
 5. **Consultas SQL**: respaldan análisis por ciudad, métricas agregadas y ventas temporales.
+6. **Dashboard en Looker Studio**: herramienta interactiva para exploración visual de los resultados.
 
 ---
 
