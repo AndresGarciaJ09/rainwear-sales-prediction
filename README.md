@@ -22,7 +22,10 @@ rainwear-sales-prediction/
 │   ├── 01. Mapa de calor de correlación clima vs ventas.png
 │   ├── 02. Ventas reales vs ventas predichas.png
 │   ├── 03. Relación entre ventas reales y predichas.png
-│   └── 04. Distribución del error absoluto.png
+│   ├── 04. Distribución del error absoluto.png
+│   ├── SQL1.png                             # Consulta SQL: Comparación entre ventas reales y predichas
+│   ├── SQL2.png                             # Consulta SQL: Métricas climáticas y de ventas promedio
+│   └── SQL3.png                             # Consulta SQL: Ranking de ventas por ciudad
 │
 ├── scripts/
 │   ├── entrenar_modelo.py                  # Script que entrena el modelo de regresión
@@ -120,6 +123,21 @@ Se construyó un dashboard interactivo en Looker Studio que permite visualizar:
 
 ---
 
+## 🔢 Consultas SQL (Capturas)
+
+Como parte de la entrega, se realizaron las siguientes consultas sobre los datos almacenados en Supabase:
+
+### SQL1: Comparación entre ventas reales y predichas
+![SQL1](./images/SQL1.png)
+
+### SQL2: Promedios de ventas y variables climáticas
+![SQL2](./images/SQL2.png)
+
+### SQL3: Ranking de ventas por ciudad
+![SQL3](./images/SQL3.png)
+
+---
+
 ## ⏱️ Tiempo y Observaciones Finales
 
 Debido al tiempo limitado (4 horas), este proyecto se completó parcialmente y sin automatización del flujo. Tal como se explicó previamente al equipo de reclutamiento, se intentó generar datos con IA a través de [Mockaroo](https://mockaroo.com/), pero se descartaron por no contar con ubicaciones geográficas reales, lo cual inhabilitaba cualquier intento serio de predicción climática.
@@ -131,6 +149,7 @@ Por tanto, se optó por usar el dataset de Kaggle citado, que permitió un anál
 2. **Ventas reales vs. predichas**: el modelo no captura el patrón real.
 3. **Relación real vs. predicha**: ventas predichas están todas por debajo de las reales.
 4. **Distribución del error**: errores absolutos grandes en la mayoría de casos.
+5. **Consultas SQL**: respaldan análisis por ciudad, métricas agregadas y ventas temporales.
 
 ---
 
