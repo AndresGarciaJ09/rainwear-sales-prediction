@@ -26,7 +26,8 @@ rainwear-sales-prediction/
 │   ├── SQL1.png                             # Consulta SQL: Comparación entre ventas reales y predichas
 │   ├── SQL2.png                             # Consulta SQL: Métricas climáticas y de ventas promedio
 │   ├── SQL3.png                             # Consulta SQL: Ranking de ventas por ciudad
-│   └── superbase.png                        # Imagen de tabla publicada en Supabase
+│   ├── superbase.png                        # Imagen de tabla publicada en Supabase
+│   └── Looker01.png                         # Captura del dashboard de Looker Studio
 │
 ├── scripts/
 │   ├── entrenar_modelo.py                  # Script que entrena el modelo de regresión
@@ -46,7 +47,7 @@ rainwear-sales-prediction/
 
 ---
 
-## 🗃️ Dataset Utilizado
+## 📃 Dataset Utilizado
 
 Se utilizó el dataset **Superstore Sales**, disponible públicamente en Kaggle:
 
@@ -136,6 +137,8 @@ Se construyó un dashboard interactivo en Looker Studio que permite visualizar:
 🔗 [Enlace al dashboard](https://lookerstudio.google.com/s/hj5mG0SO9HE)
 
 Este dashboard se conecta directamente con Supabase y se actualiza en tiempo real con base en la información contenida en la tabla `ventas_predichas_clima`.
+
+![Dashboard Looker](./images/Looker01.png)
 
 ---
 
