@@ -171,9 +171,13 @@ La automatización con `n8n` o `cron` quedó fuera del alcance de esta primera e
 
 ```bash
 pandas
+requests
 scikit-learn
+sqlalchemy
+psycopg2-binary
+python-dotenv
 matplotlib
-supabase
+geopy
 ```
 
 Instalación:
