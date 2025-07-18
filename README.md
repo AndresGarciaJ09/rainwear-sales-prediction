@@ -18,6 +18,12 @@ rainwear-sales-prediction/
 │   ├── ventas_predichas_solo_clima.csv     # Datos con predicciones generadas por el modelo
 │   └── ventas_predichas_limpio.csv         # Archivo limpio para subida a Supabase
 │
+├── images/                                 # Carpeta de resultados visuales
+│   ├── 01. Mapa de calor de correlación clima vs ventas.png
+│   ├── 02. Ventas reales vs ventas predichas.png
+│   ├── 03. Relación entre ventas reales y predichas.png
+│   └── 04. Distribución del error absoluto.png
+│
 ├── scripts/
 │   ├── entrenar_modelo.py                  # Script que entrena el modelo de regresión
 │   ├── Limpiar.py                          # Script de limpieza del dataset
@@ -67,16 +73,16 @@ Esto indica que el modelo **no es viable para predicción real**, al menos con l
 A continuación se presentan algunos gráficos generados durante el análisis:
 
 ### 01. Mapa de calor de correlación: clima vs ventas
-![Mapa de calor](./docs/mapa_calor.png)
+![Mapa de calor](./images/01.%20Mapa%20de%20calor%20de%20correlaci%C3%B3n%20clima%20vs%20ventas.png)
 
 ### 02. Ventas reales vs ventas predichas
-![Ventas vs Predicciones](./docs/ventas_vs_pred.png)
+![Ventas vs Predicciones](./images/02.%20Ventas%20reales%20vs%20ventas%20predichas.png)
 
 ### 03. Relación entre ventas reales y predichas
-![Relación Real vs Pred](./docs/relacion_ventas.png)
+![Relación Real vs Pred](./images/03.%20Relaci%C3%B3n%20entre%20ventas%20reales%20y%20predichas.png)
 
 ### 04. Distribución del error absoluto
-![Error Absoluto](./docs/error_absoluto.png)
+![Error Absoluto](./images/04.%20Distribuci%C3%B3n%20del%20error%20absoluto.png)
 
 Estos resultados visuales refuerzan la conclusión de que no existe una relación clara entre clima y ventas en esta tienda específica.
 
@@ -116,9 +122,15 @@ Se construyó un dashboard interactivo en Looker Studio que permite visualizar:
 
 ## ⏱️ Tiempo y Observaciones Finales
 
-Debido al tiempo limitado (4 horas), este proyecto se completó parcialmente y sin automatización del flujo. Se decidió no usar datos simulados con Mockaroo, ya que carecían de sentido sin ubicaciones geográficas reales. En su lugar, se trabajó con un dataset más consistente de Kaggle.
+Debido al tiempo limitado (4 horas), este proyecto se completó parcialmente y sin automatización del flujo. Tal como se explicó previamente al equipo de reclutamiento, se intentó generar datos con IA a través de [Mockaroo](https://mockaroo.com/), pero se descartaron por no contar con ubicaciones geográficas reales, lo cual inhabilitaba cualquier intento serio de predicción climática.
 
-Sin embargo, **la tienda analizada no presentó una relación significativa entre clima y ventas**, por lo cual la predicción basada exclusivamente en clima no fue exitosa. El modelo no pudo capturar la dinámica real de ventas.
+Por tanto, se optó por usar el dataset de Kaggle citado, que permitió un análisis más coherente y completo. Sin embargo, **la tienda analizada no presentó una relación significativa entre clima y ventas**, por lo cual la predicción basada exclusivamente en variables climáticas fue fallida y el modelo resultó poco útil. 
+
+### Imágenes presentadas:
+1. **Mapa de calor de correlación**: muestra que no hay correlación entre clima y ventas.
+2. **Ventas reales vs. predichas**: el modelo no captura el patrón real.
+3. **Relación real vs. predicha**: ventas predichas están todas por debajo de las reales.
+4. **Distribución del error**: errores absolutos grandes en la mayoría de casos.
 
 ---
 
