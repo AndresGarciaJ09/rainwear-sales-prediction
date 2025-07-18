@@ -205,4 +205,4 @@ Andrés García
 
 ---
 
-📦 Entrega realizada antes del mediodía del viernes 18 de julio como fue acordado con el equipo re
+📦 Entrega realizada antes del mediodía del viernes 18 de julio como fue acordado con el equipo reclutador.
